@@ -6,8 +6,8 @@ Este projeto foi desenvolvido para validar os conhecimentos agregados com React.
 
 ```
 $ npm install -g create-react-app
-$ git clone repo
-$ cd ./repo
+$ git clone https://github.com/Adelires/github-react-users.git
+$ cd ./github-react-users
 $ npm install
 $ npm start
 
