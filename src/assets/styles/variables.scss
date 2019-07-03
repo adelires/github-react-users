@@ -1,0 +1,21 @@
+$color-white: white;
+$color-red: rgb(136, 1, 23);
+$color-purple: rgb(99, 43, 136);
+$color-purple-darken: rgb(42, 31, 57);
+
+$box-shadow-1: rgba(8, 43, 78, 0.02);
+$box-shadow-2: rgba(14, 19, 24, 0.15);
+
+@mixin custom-background($color, $bgColor) {
+    color: $color;
+    border-color: $bgColor;
+    background-color: $bgColor;
+}
+
+@mixin box-shadow($box-shadow-x, $box-shadow-y) {
+    -webkit-box-shadow: $box-shadow-x, $box-shadow-y;
+    -moz-box-shadow: $box-shadow-x, $box-shadow-y;
+    -o-box-shadow: $box-shadow-x, $box-shadow-y;
+    -ms-box-shadow: $box-shadow-x, $box-shadow-y;
+    box-shadow: $box-shadow-x, $box-shadow-y;
+}

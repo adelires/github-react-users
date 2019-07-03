@@ -1,0 +1,48 @@
+@import 'variables';
+
+.home-page {
+  &__search-container {
+    background-image: url("../img/banner4.png");
+    padding: 50px 20px 20px;
+    background-size: cover;
+    margin-top: 5px;
+  }
+}
+
+.search-user {
+  &__label-input {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    img {
+      max-width: 200px;
+    }
+  }
+
+  &__input {
+    &-group {
+      @include box-shadow(0 0 0 1px $box-shadow-1, 0 2px 8px $box-shadow-2);
+      border-radius: 2px;
+    }
+  }
+  &__btn {
+    @include custom-background($color-white, $color-red);
+    &:hover {
+      @include custom-background($color-white, $color-red);
+    }
+  }
+}
+
+.list-user {
+  &__card-description-link {
+    @include custom-background($color-white, $color-purple);
+    &:hover {
+      @include custom-background($color-white, $color-purple-darken);
+    }
+  }
+}
